@@ -8,6 +8,19 @@ namespace GBhomework
 {
     class Program
     {
+        static int GetFibonacci(int SerialNumber)
+        {
+            //
+            if(SerialNumber == 0)
+            {
+                return 0;
+            }
+            if(SerialNumber == 1)
+            {
+                return 1;
+            }
+            return (GetFibonacci(SerialNumber - 1) + GetFibonacci(SerialNumber - 2));
+        }
         static int Fibonacci(int num)
         {
             //0 1 1 и т.д
@@ -24,8 +37,12 @@ namespace GBhomework
         {
             //(*) Написать программу, вычисляющую число Фибоначчи для заданного значения рекурсивным способом.
 
+            //int number = int.Parse(Console.ReadLine());
+            //Console.WriteLine(Fibonacci(number));
+            //Console.ReadKey();
+
             int number = int.Parse(Console.ReadLine());
-            Console.WriteLine(Fibonacci(number));
+            Console.WriteLine(GetFibonacci(number));
             Console.ReadKey();
         }
     }
