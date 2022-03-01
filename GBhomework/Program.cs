@@ -10,6 +10,11 @@ namespace GBhomework
     {
         static void Main(string[] args)
         {
+            string a = "Я строка";
+            string b = 'Хто я?';
+
+            string[] b = { 'Хто', 'мы' };
+            string[] c = { "Мы", "есть", "массив" };
         }
     }
 }
